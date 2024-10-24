@@ -1,0 +1,21 @@
+{
+  "name": "02-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "lite-server",
+    "build:watch": "tsc -w",
+    "start:watch": "concurrently \"npm run build:watch\" \"npm run start\"",
+    "dev:watch": "npm run start & npm run build:watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  }
+}
