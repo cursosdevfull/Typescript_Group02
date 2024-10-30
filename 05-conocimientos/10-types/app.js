@@ -1,3 +1,4 @@
+"use strict";
 var GENDER;
 (function (GENDER) {
     GENDER["MALE"] = "MALE";
@@ -15,34 +16,33 @@ function combine(input1, input2, gender, resultConversion) {
         return input1 + input2;
     }
 }
-var combineNames = combine("Max", "Anna", GENDER.MALE, "result-string");
+const combineNames = combine("Max", "Anna", GENDER.MALE, "result-string");
 console.log(combineNames);
-var combineAges = combine(30, 26, GENDER.FEMALE, "result-number");
+const combineAges = combine(30, 26, GENDER.FEMALE, "result-number");
 console.log(combineAges);
 function printUser(user) {
-    console.log("Name: ".concat(user.name, ", Age: ").concat(user.age));
+    console.log(`Name: ${user.name}, Age: ${user.age}`);
 }
-var routes = [
+const routes = [
     {
         path: "/",
         component: "HomeComponent",
-        callback: function (message) {
-            console.log(message);
+        callback: (message) => {
+            console.log("message Home", message);
         },
     },
     {
         path: "/about",
         component: "AboutComponent",
-        callback: function (message) {
-            console.log(message);
+        callback: (message) => {
+            console.log("message About", message);
         },
     },
 ];
 function createRoute(route) {
-    console.log("Path: ".concat(route.path, ", Component: ").concat(route.component));
-    route.callback("Hello World");
+    console.log(`Path: ${route.path}, Component: ${route.component}`);
+    route.callback("Hola Mundo");
 }
-for (var _i = 0, routes_1 = routes; _i < routes_1.length; _i++) {
-    var route = routes_1[_i];
+for (const route of routes) {
     createRoute(route);
 }

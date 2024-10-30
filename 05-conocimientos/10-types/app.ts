@@ -5,11 +5,13 @@ enum GENDER {
 
 type TInput = string | number;
 
+type TResultConversion = "result-number" | "result-string";
+
 function combine(
   input1: TInput,
   input2: TInput,
   gender: GENDER,
-  resultConversion: "result-number" | "result-string"
+  resultConversion: TResultConversion
 ) {
   if (
     typeof input1 === "string" &&
@@ -41,9 +43,11 @@ function printUser(user: TUser) {
   console.log(`Name: ${user.name}, Age: ${user.age}`);
 }
 
+type TComponent = "HomeComponent" | "AboutComponent" | "ContactComponent";
+
 type ROUTE = {
   path: string;
-  component: "HomeComponent" | "AboutComponent" | "ContactComponent";
+  component: TComponent;
   callback: (messsage: string) => void;
 };
 
@@ -54,21 +58,21 @@ const routes: ROUTES = [
     path: "/",
     component: "HomeComponent",
     callback: (message: string) => {
-      console.log(message);
+      console.log("message Home", message);
     },
   },
   {
     path: "/about",
     component: "AboutComponent",
     callback: (message: string) => {
-      console.log(message);
+      console.log("message About", message);
     },
   },
 ];
 
 function createRoute(route: ROUTE) {
   console.log(`Path: ${route.path}, Component: ${route.component}`);
-  route.callback("Hello World");
+  route.callback("Hola Mundo");
 }
 
 for (const route of routes) {
