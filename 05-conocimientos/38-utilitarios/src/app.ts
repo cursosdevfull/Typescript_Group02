@@ -18,6 +18,8 @@ type UserProps = Partial<
 type UserFieldsUpdate = Pick<UserProps, "name" | "lastname" | "password"> &
   Omit<UserOptionalProps, "userId">;
 
+type Address = Record<string, string | number | boolean>
+
 class User {
   private readonly userId: number | undefined;
   private name: string | undefined;
@@ -26,6 +28,7 @@ class User {
   private password: string | undefined;
   private age: number | undefined;
   private gender: string | undefined;
+  private address: Address = {district: "San Isidro", city: "Lima"};
 
   constructor(props: UserProps) {
     this.name = props.name;
