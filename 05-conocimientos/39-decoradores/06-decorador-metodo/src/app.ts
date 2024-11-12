@@ -5,13 +5,13 @@ function Component(props: { selector: string; template: string }) {
     if (element) {
       element.innerHTML = props.template;
       console.log("constructor", target.constructor);
-      //const instance = new target.constructor();
+      const instance = new target();
       //console.log("current date from Component", instance.currentDate);
       //console.log("list", instance.productList);
       const button = element.querySelector("button");
       button?.addEventListener("click", () => {
-        //instance.showProducts = instance.showProducts.bind(instance);
-        //instance.showProducts();
+        instance.showProducts = instance.showProducts.bind(instance);
+        instance.showProducts();
       });
     }
   };
@@ -57,6 +57,4 @@ class Inventory {
 
 const inventory = new Inventory();
 
-setTimeout(() => {
-  inventory.addProduct("Laptop", 60);
-}, 3000);
+inventory.addProduct("Laptop", 60);

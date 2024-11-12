@@ -8,68 +8,91 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-function Component(props) {
-    return (target) => {
-        const element = document.querySelector(props.selector);
-        console.log("element", element);
-        if (element) {
-            element.innerHTML = props.template;
-            console.log("constructor", target.constructor);
-            //const instance = new target();
-            //console.log("current date from Component", instance.currentDate);
-            //console.log("list", instance.productList);
-            const button = element.querySelector("button");
-            button === null || button === void 0 ? void 0 : button.addEventListener("click", () => {
-                //instance.showProducts = instance.showProducts.bind(instance);
-                //instance.showProducts();
+// Decorador de clase que añade la funcionalidad de renderizar la lista de productos
+function ProductList(config) {
+    return function (target) {
+        const original = target;
+        /*const newConstructor: any = function (...args: any[]) {
+          const instance = new original(...args);
+          instance.render();
+          return instance;
+        };*/
+        target.prototype.render = function () {
+            console.log("execute render");
+            const productList = document.getElementById(config.selector);
+            if (productList) {
+                productList.innerHTML = ""; // Limpiar la lista existente
+                console.log("this.products", this.products);
+                console.log("length", this.products.length);
+                this.products.forEach((product) => {
+                    const itemHtml = config.template(product);
+                    const item = document.createElement("li");
+                    item.innerHTML = itemHtml;
+                    productList.appendChild(item);
+                });
+            }
+            /*       if (productList) {
+              productList.innerHTML = "";
+              this.products.forEach((product: string) => {
+                const item = document.createElement("li");
+                item.textContent = product;
+                productList.appendChild(item);
+              });
+            } */
+        };
+        console.log("newConstructor", target.prototype);
+        return target;
+    };
+}
+// Decorador de propiedad que añade un producto a la lista
+function AddProduct(target, propertyKey) {
+    console.log("target", target);
+    let value;
+    const getter = () => {
+        return value;
+    };
+    const setter = (newValue) => {
+        console.log("target2", target);
+        value = newValue;
+        console.log("value", value);
+        target.render(); // Llama a render después de añadir un producto
+    };
+    Object.defineProperty(target, propertyKey, {
+        get: getter,
+        set: setter,
+    });
+}
+// Clase Product que utiliza los decoradores
+let Product = class Product {
+    constructor() {
+        this.products = [];
+        this.init();
+    }
+    init() {
+        const addButton = document.getElementById("add-button");
+        const inputField = document.getElementById("product-input");
+        if (addButton) {
+            addButton.addEventListener("click", () => {
+                const productName = inputField.value;
+                if (productName) {
+                    this.products = [...this.products, productName]; // Usa el setter
+                    inputField.value = ""; // Limpiar el campo de entrada
+                }
             });
         }
-    };
-}
-function MinQuantity(min) {
-    return (target, propertyKey, descriptor) => {
-        const originalMethod = descriptor.value;
-        descriptor.value = function (...args) {
-            console.log("Arguments:", args);
-            if (args[1] < min)
-                throw "Quantity is too low";
-            originalMethod.apply(this, args);
-        };
-        return descriptor;
-    };
-}
-let Inventory = class Inventory {
-    constructor() {
-        this.productList = [];
-        this.currentDate = new Date();
-    }
-    addProduct(productName, quantity) {
-        console.log("Date from addProduct", this.currentDate);
-        this.productList.push({ productName, quantity });
-        console.log("Product added:", productName);
-        console.log("Products", this.productList);
-        console.log("this", this);
-    }
-    showProducts() {
-        console.log("Show products");
-        console.log("this showProducts", this);
-        console.log(this.productList);
     }
 };
 __decorate([
-    MinQuantity(50),
-    __metadata("design:type", Function),
-    __metadata("design:paramtypes", [String, Number]),
-    __metadata("design:returntype", void 0)
-], Inventory.prototype, "addProduct", null);
-Inventory = __decorate([
-    Component({
-        selector: "#app",
-        template: `<button id="show-product">Show products</button>`,
-    })
-], Inventory);
-const inventory = new Inventory();
-setTimeout(() => {
-    inventory.addProduct("Laptop", 60);
-}, 3000);
+    AddProduct,
+    __metadata("design:type", Array)
+], Product.prototype, "products", void 0);
+Product = __decorate([
+    ProductList({
+        selector: "product-list",
+        template: (product) => `<span>${product}</span>`,
+    }),
+    __metadata("design:paramtypes", [])
+], Product);
+// Inicializar la clase Product
+const productApp = new Product();
 //# sourceMappingURL=app.js.map
