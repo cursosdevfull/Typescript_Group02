@@ -23,7 +23,7 @@ export type TAccountProxy = {
   decreaseCash(account: Account, amount: number): void;
 };
 
-export class AccountProxyBankA implements TAccountProxy {
+export class AccountPremium implements TAccountProxy {
   private cash: number = 0;
 
   increaseCash(account: Account, amount: number): void {
@@ -41,7 +41,7 @@ export class AccountProxyBankA implements TAccountProxy {
   }
 }
 
-export class AccountProxyBankB implements TAccountProxy {
+export class AccountFree implements TAccountProxy {
   private cash: number = 0;
   private readonly feeIncrease = 1;
   private readonly feeDecrease = 2;
