@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="24.8.6">
+  <diagram name="1" id="LhEtJ2KfPGMWcfk-PQyk">
+    <mxGraphModel dx="1434" dy="744" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#E3E3E3" math="0" shadow="1">
+      <root>
+        <mxCell id="ewiUAZ0GqBU54c8BVMHp-0" />
+        <mxCell id="ewiUAZ0GqBU54c8BVMHp-1" parent="ewiUAZ0GqBU54c8BVMHp-0" />
+        <mxCell id="ewiUAZ0GqBU54c8BVMHp-2" value="" style="shape=image;imageAspect=0;aspect=fixed;verticalLabelPosition=bottom;verticalAlign=top;rounded=0;sketch=0;strokeColor=#FF6392;fillColor=#FFE45E;fontColor=#5AA9E6;image=https://cursos-dev.com/assets/images/logo-horizontal.png;" parent="ewiUAZ0GqBU54c8BVMHp-1" vertex="1">
+          <mxGeometry width="282.99" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="AL5JoIVcBm_0SII6mTga-0" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="ewiUAZ0GqBU54c8BVMHp-1" source="AL5JoIVcBm_0SII6mTga-3" target="AL5JoIVcBm_0SII6mTga-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AL5JoIVcBm_0SII6mTga-1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="ewiUAZ0GqBU54c8BVMHp-1" source="AL5JoIVcBm_0SII6mTga-3" target="AL5JoIVcBm_0SII6mTga-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AL5JoIVcBm_0SII6mTga-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="ewiUAZ0GqBU54c8BVMHp-1" source="AL5JoIVcBm_0SII6mTga-3" target="AL5JoIVcBm_0SII6mTga-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AL5JoIVcBm_0SII6mTga-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="ewiUAZ0GqBU54c8BVMHp-1" source="AL5JoIVcBm_0SII6mTga-3" target="AL5JoIVcBm_0SII6mTga-10" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AL5JoIVcBm_0SII6mTga-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="ewiUAZ0GqBU54c8BVMHp-1" source="AL5JoIVcBm_0SII6mTga-3" target="AL5JoIVcBm_0SII6mTga-13" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AL5JoIVcBm_0SII6mTga-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="ewiUAZ0GqBU54c8BVMHp-1" source="AL5JoIVcBm_0SII6mTga-3" target="AL5JoIVcBm_0SII6mTga-16" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AL5JoIVcBm_0SII6mTga-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="ewiUAZ0GqBU54c8BVMHp-1" source="AL5JoIVcBm_0SII6mTga-3" target="AL5JoIVcBm_0SII6mTga-19" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4ozqWEK3Xkek4LviDdkn-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="ewiUAZ0GqBU54c8BVMHp-1" source="AL5JoIVcBm_0SII6mTga-3" target="4ozqWEK3Xkek4LviDdkn-0" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4ozqWEK3Xkek4LviDdkn-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="ewiUAZ0GqBU54c8BVMHp-1" source="AL5JoIVcBm_0SII6mTga-3" target="4ozqWEK3Xkek4LviDdkn-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AL5JoIVcBm_0SII6mTga-3" value="PATRONES DE COMPORTAMIENTO" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fillColor=#d5e8d4;strokeColor=#82b366;" parent="ewiUAZ0GqBU54c8BVMHp-1" vertex="1">
+          <mxGeometry x="1350" y="170" width="246" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AL5JoIVcBm_0SII6mTga-4" value="Chain of responsability" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fillColor=#fff2cc;strokeColor=#d6b656;" parent="ewiUAZ0GqBU54c8BVMHp-1" vertex="1">
+          <mxGeometry x="60" y="350" width="246" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AL5JoIVcBm_0SII6mTga-5" value="Command" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fillColor=#fff2cc;strokeColor=#d6b656;" parent="ewiUAZ0GqBU54c8BVMHp-1" vertex="1">
+          <mxGeometry x="340" y="350" width="246" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AL5JoIVcBm_0SII6mTga-6" value="Iterator" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fillColor=#fff2cc;strokeColor=#d6b656;" parent="ewiUAZ0GqBU54c8BVMHp-1" vertex="1">
+          <mxGeometry x="620" y="350" width="246" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AL5JoIVcBm_0SII6mTga-7" value="Permite pasar por diferentes etapas de un proceso y cada etapa puede o no permitir el paso a la siguiente" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="ewiUAZ0GqBU54c8BVMHp-1" vertex="1">
+          <mxGeometry x="60" y="460" width="246" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="AL5JoIVcBm_0SII6mTga-8" value="Permite desacoplar los procesos porque convierte la petición en un objeto independiente" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="ewiUAZ0GqBU54c8BVMHp-1" vertex="1">
+          <mxGeometry x="340" y="460" width="246" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="AL5JoIVcBm_0SII6mTga-9" value="Permite recorrer elementos de una colección sin mostrar su implementación" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="ewiUAZ0GqBU54c8BVMHp-1" vertex="1">
+          <mxGeometry x="620" y="460" width="246" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="AL5JoIVcBm_0SII6mTga-10" value="Mediator" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fillColor=#fff2cc;strokeColor=#d6b656;" parent="ewiUAZ0GqBU54c8BVMHp-1" vertex="1">
+          <mxGeometry x="910" y="350" width="246" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AL5JoIVcBm_0SII6mTga-11" value="Permite reducir las dependencias directas usando una clase intermediaria" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="ewiUAZ0GqBU54c8BVMHp-1" vertex="1">
+          <mxGeometry x="910" y="460" width="246" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="AL5JoIVcBm_0SII6mTga-13" value="Memento" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fillColor=#fff2cc;strokeColor=#d6b656;" parent="ewiUAZ0GqBU54c8BVMHp-1" vertex="1">
+          <mxGeometry x="1200" y="350" width="246" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AL5JoIVcBm_0SII6mTga-14" value="Permite guardar y restaurar los estados de un objeto" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="ewiUAZ0GqBU54c8BVMHp-1" vertex="1">
+          <mxGeometry x="1200" y="460" width="246" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="AL5JoIVcBm_0SII6mTga-16" value="Observer" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fillColor=#fff2cc;strokeColor=#d6b656;" parent="ewiUAZ0GqBU54c8BVMHp-1" vertex="1">
+          <mxGeometry x="1490" y="350" width="246" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AL5JoIVcBm_0SII6mTga-17" value="Permite comunicar eventos a suscriptores" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="ewiUAZ0GqBU54c8BVMHp-1" vertex="1">
+          <mxGeometry x="1490" y="460" width="246" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="AL5JoIVcBm_0SII6mTga-19" value="State" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fillColor=#fff2cc;strokeColor=#d6b656;" parent="ewiUAZ0GqBU54c8BVMHp-1" vertex="1">
+          <mxGeometry x="1780" y="350" width="246" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AL5JoIVcBm_0SII6mTga-20" value="Permite cambiar el comportamiento de un objeto" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="ewiUAZ0GqBU54c8BVMHp-1" vertex="1">
+          <mxGeometry x="1780" y="460" width="246" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="4ozqWEK3Xkek4LviDdkn-0" value="Strategy" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fillColor=#fff2cc;strokeColor=#d6b656;" parent="ewiUAZ0GqBU54c8BVMHp-1" vertex="1">
+          <mxGeometry x="2090" y="350" width="246" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4ozqWEK3Xkek4LviDdkn-1" value="Permite hacer intercambiables los algoritmos" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="ewiUAZ0GqBU54c8BVMHp-1" vertex="1">
+          <mxGeometry x="2090" y="460" width="246" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="4ozqWEK3Xkek4LviDdkn-3" value="Template Method" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fillColor=#fff2cc;strokeColor=#d6b656;" parent="ewiUAZ0GqBU54c8BVMHp-1" vertex="1">
+          <mxGeometry x="2380" y="350" width="246" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4ozqWEK3Xkek4LviDdkn-4" value="Permite definir comportamiento que luego puede ser sobreescrito" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="ewiUAZ0GqBU54c8BVMHp-1" vertex="1">
+          <mxGeometry x="2380" y="460" width="246" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="4ozqWEK3Xkek4LviDdkn-6" value="Visitor" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fillColor=#fff2cc;strokeColor=#d6b656;" parent="ewiUAZ0GqBU54c8BVMHp-1" vertex="1">
+          <mxGeometry x="2660" y="350" width="246" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4ozqWEK3Xkek4LviDdkn-7" value="Permite separar el comportamiento (algoritmo) de los objetos sobre los cuales se aplican" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="ewiUAZ0GqBU54c8BVMHp-1" vertex="1">
+          <mxGeometry x="2660" y="460" width="246" height="140" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
